@@ -40,10 +40,24 @@ body {
 }
 
 header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	background: rgba(8, 12, 29, 0.1);
+	backdrop-filter: blur(10px);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 28px 8vw;
+	transition: background 0.3s ease, padding 0.3s ease;
+}
+
+header.scrolled {
+	background: rgba(8, 12, 29, 0.85);
+	padding: 20px 8vw;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .logo {

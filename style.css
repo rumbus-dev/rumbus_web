@@ -262,8 +262,10 @@ nav a.active::after {
 footer {
 	background-color: #050814;
 	color: var(--muted);
-	text-align: center;
-	padding: 40px 20px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-size: 0.9rem;
 	border-top: 1px solid rgba(255, 255, 255, 0.05);
 }

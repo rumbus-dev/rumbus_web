@@ -28,6 +28,7 @@ body {
 	background-position: center;
 	display: flex;
 	flex-direction: column;
+	padding-top: 90px;
 }
 
 /* Page specific backgrounds can be overridden or added */
@@ -37,6 +38,11 @@ body {
 	background-color: #080c1d;
 	display: flex;
 	flex-direction: column;
+}
+
+/* Prevent fixed header from covering content when scrolling to ID */
+section[id] {
+	scroll-margin-top: 100px;
 }
 
 header {

@@ -213,39 +213,54 @@ nav a.active::after {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+	color: #1a1a1a;
 }
 
 .content-inner {
 	max-width: 1200px;
 	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.9);
+	padding: 40px;
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 #about {
-	background-image: linear-gradient(var(--overlay), var(--overlay)),
-		url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80");
+	background-image: url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80");
 }
 
 #products {
-	background-image: linear-gradient(var(--overlay), var(--overlay)),
-		url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80");
+	background-image: url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80");
 }
 
 #contact {
-	background-image: linear-gradient(var(--overlay), var(--overlay)),
-		url("https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=1600&q=80");
+	background-image: url("https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=1600&q=80");
 }
 
 .content-section h2 {
 	font-size: 2.5rem;
 	margin-bottom: 2rem;
-	color: var(--text);
+	color: #111;
 }
 
 .content-section p {
 	font-size: 1.1rem;
-	color: var(--muted);
+	color: #444;
 	line-height: 1.6;
 	margin-bottom: 1.5rem;
+}
+
+.content-section .info-card {
+	background: rgba(0, 0, 0, 0.03);
+	border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.content-section .info-card h3 {
+	color: #111;
+}
+
+.content-section .info-card p {
+	color: #555;
 }
 
 @media (max-width: 720px) {

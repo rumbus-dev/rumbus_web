@@ -75,6 +75,9 @@ header.scrolled {
 .logo img {
 	height: 40px;
 	width: auto;
+	background-color: white;
+	padding: 4px;
+	border-radius: 8px;
 }
 
 nav ul {

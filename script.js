@@ -6,7 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
 			e.preventDefault();
 
 			const targetId = this.getAttribute("href");
-			if (targetId === "#") return;
+			if (targetId === "#") {
+				window.scrollTo({
+					top: 0,
+					behavior: "smooth",
+				});
+				return;
+			}
 
 			const targetElement = document.querySelector(targetId);
 			if (targetElement) {

@@ -275,3 +275,48 @@ footer {
 	font-size: 0.9rem;
 	border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
+
+/* Contact Form Styles */
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	max-width: 500px;
+}
+
+.contact-form label {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	font-weight: 500;
+	color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+	padding: 12px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	font-family: inherit;
+	font-size: 1rem;
+	background-color: #fff;
+	transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+	outline: none;
+	border-color: var(--accent);
+}
+
+.contact-form textarea {
+	min-height: 120px;
+	resize: vertical;
+}
+
+.contact-form button {
+	align-self: flex-start;
+	margin-top: 10px;
+	border: none;
+	cursor: pointer;
+}

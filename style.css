@@ -182,10 +182,31 @@ nav a.active::after {
 
 /* Specific Content Styles */
 .content-section {
-	padding: 60px 8vw;
+	padding: 100px 8vw;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.content-inner {
 	max-width: 1200px;
 	margin: 0 auto;
-	width: 100%;
+}
+
+#about {
+	background-image: linear-gradient(var(--overlay), var(--overlay)),
+		url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80");
+}
+
+#products {
+	background-image: linear-gradient(var(--overlay), var(--overlay)),
+		url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80");
+}
+
+#contact {
+	background-image: linear-gradient(var(--overlay), var(--overlay)),
+		url("https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=1600&q=80");
 }
 
 .content-section h2 {

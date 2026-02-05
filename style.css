@@ -254,6 +254,13 @@ nav a.active::after {
 	color: #555;
 }
 
+#products .info-card,
+#products .info-card p,
+#products .info-card li,
+#products .info-card span {
+	color: #000;
+}
+
 @media (max-width: 720px) {
 	header {
 		flex-direction: column;

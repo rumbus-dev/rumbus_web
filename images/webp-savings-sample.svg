@@ -1,0 +1,19 @@
+<svg width="360" height="120" viewBox="0 0 360 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="360" height="120" rx="12" fill="#F7F9FC"/>
+
+  <rect x="18" y="22" width="138" height="76" rx="10" fill="#FFE8E8" stroke="#F2B7B7"/>
+  <text x="30" y="48" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#8A2D2D">JPG 480 KB</text>
+  <rect x="30" y="60" width="110" height="12" rx="6" fill="#E06A6A"/>
+  <text x="30" y="88" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#8A2D2D">전송량 높음</text>
+
+  <rect x="204" y="22" width="138" height="76" rx="10" fill="#E8F3FF" stroke="#B7D2F2"/>
+  <text x="216" y="48" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#2D4A8A">WebP 190 KB</text>
+  <rect x="216" y="60" width="58" height="12" rx="6" fill="#5E9CE0"/>
+  <text x="216" y="88" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#2D4A8A">전송량 절감</text>
+
+  <path d="M164 60H196" stroke="#93A4C6" stroke-width="2"/>
+  <path d="M190 54L196 60L190 66" stroke="#93A4C6" stroke-width="2"/>
+
+  <circle cx="180" cy="36" r="10" fill="#EEF3FF" stroke="#C6D5F2"/>
+  <text x="175" y="40" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#3B4A6B">-60%</text>
+</svg>

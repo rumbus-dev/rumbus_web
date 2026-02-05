@@ -1,0 +1,19 @@
+<svg width="360" height="120" viewBox="0 0 360 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="360" height="120" rx="12" fill="#F7F9FC"/>
+
+  <rect x="18" y="22" width="140" height="76" rx="10" fill="#E6ECF5"/>
+  <rect x="28" y="32" width="120" height="56" rx="8" fill="#C9D6EA"/>
+  <circle cx="78" cy="60" r="18" fill="#9FB2D3"/>
+  <rect x="62" y="46" width="32" height="28" rx="6" fill="#E8EEF7"/>
+
+  <rect x="202" y="22" width="140" height="76" rx="10" fill="#E6ECF5"/>
+  <rect x="212" y="32" width="120" height="56" rx="8" fill="#C9D6EA"/>
+  <rect x="232" y="38" width="80" height="44" rx="6" fill="#9FB2D3"/>
+  <rect x="244" y="46" width="56" height="28" rx="6" fill="#E8EEF7"/>
+
+  <path d="M166 60H194" stroke="#93A4C6" stroke-width="2"/>
+  <path d="M188 54L194 60L188 66" stroke="#93A4C6" stroke-width="2"/>
+
+  <text x="30" y="108" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#3B4A6B">원본</text>
+  <text x="228" y="108" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#3B4A6B">스마트 크롭 + 지능형 압축</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg width="360" height="120" viewBox="0 0 360 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="360" height="120" rx="12" fill="#F7F9FC"/>
+
+  <rect x="18" y="22" width="140" height="76" rx="10" fill="#E6ECF5"/>
+  <circle cx="70" cy="60" r="18" fill="#9FB2D3"/>
+  <circle cx="64" cy="56" r="2.5" fill="#3B4A6B"/>
+  <circle cx="76" cy="56" r="2.5" fill="#3B4A6B"/>
+  <path d="M62 66C66 70 74 70 78 66" stroke="#3B4A6B" stroke-width="2" stroke-linecap="round"/>
+
+  <rect x="200" y="22" width="140" height="76" rx="10" fill="#E6ECF5"/>
+  <rect x="228" y="34" width="84" height="52" rx="8" fill="#C9D6EA" stroke="#9FB2D3"/>
+  <circle cx="270" cy="60" r="14" fill="#9FB2D3"/>
+  <circle cx="264" cy="56" r="2" fill="#3B4A6B"/>
+  <circle cx="276" cy="56" r="2" fill="#3B4A6B"/>
+  <path d="M264 66C268 69 272 69 276 66" stroke="#3B4A6B" stroke-width="2" stroke-linecap="round"/>
+
+  <path d="M166 60H194" stroke="#93A4C6" stroke-width="2"/>
+  <path d="M188 54L194 60L188 66" stroke="#93A4C6" stroke-width="2"/>
+
+  <text x="26" y="108" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#3B4A6B">원본</text>
+  <text x="222" y="108" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#3B4A6B">얼굴 인식 크롭</text>
+</svg>

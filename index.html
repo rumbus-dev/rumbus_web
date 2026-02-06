@@ -123,7 +123,7 @@
 						<ul class="product-features">
 							<li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 30px; flex-direction: column;">
 								<div style="display: flex; gap: 10px; align-items: center;">
-									<i class="fa-solid fa-sliders" aria-hidden="true" style="font-size: 18px;"></i>
+									<i class="fa-solid fa-link" aria-hidden="true" style="font-size: 18px;"></i>
 									<span>URL 파라미터 기반 실시간 리사이징/크롭</span>
 								</div>
 								<img src="images/url-resize-sample.svg" alt="URL 파라미터 리사이징 예시" class="feature-image" />
@@ -134,6 +134,12 @@
 									<span>WebP 자동 변환으로 전송량 절감</span>
 								</div>
 								<img src="images/webp-savings-sample.svg" alt="WebP 전송량 절감 예시" class="feature-image" />
+								<div>
+									파일 크기 감소: JPEG 대비 약 25-35% 더 작은 용량
+로딩 속도 향상: 네트워크 대역폭 절약 및 페이지 로딩 시간 단축
+고품질 유지: 손실 압축과 무손실 압축 모두 지원
+투명도 지원: PNG처럼 알파 채널 지원
+								</div>
 							</li>
 							<li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 30px; flex-direction: column;">
 								<div style="display: flex; gap: 10px; align-items: center;">
@@ -149,6 +155,14 @@
 									<span>워터마크 삽입으로 저작권 보호</span>
 								</div>	
 								<img src="images/watermark-sample.svg" alt="워터마크 삽입 예시" class="feature-image" />
+								<div>
+									<ul>
+										<li>텍스트 워터마크: 저작권 표시나 브랜드명을 텍스트로 삽입</li>
+										<li>로고 워터마크: 투명 배경의 로고 이미지를 삽입 (300x300 PNG)</li>
+										<li>위치 및 투명도 조절: 우측 하단에 35% 투명도로 배치 (코드 수정으로 변경 가능)</li>
+										<li>자동 크기 조정: 이미지 크기에 맞춰 워터마크 폰트 크기 자동 조절</li>
+									</ul>
+								</div>
 							</li>
 
 							<li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 30px; flex-direction: column;">
@@ -157,13 +171,32 @@
 									<span>백업/삭제 예약과 디스크 사용 통계 제공</span>
 								</div>
 								<img src="images/schedule-usage-sample.svg" alt="백업/삭제 예약과 디스크 사용 통계 예시" class="feature-image" />
+								<div>
+									<ul>
+										<li>데이터 삭제 예약: 오래된 이미지 파일을 자동으로 정리하여 저장 공간 확보</li>
+										<li>데이터 백업: 중요한 이미지를 주기적으로 백업하여 데이터 손실 방지</li>
+										<li>유연한 스케줄링: 분/시간/일/월/년 단위로 세밀한 예약 설정 가능</li>
+									</ul>
+								</div>
 							</li>
 							<li style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 30px; flex-direction: column;">
 								<div style="display: flex; gap: 10px; align-items: center;">
 									<i class="fa-solid fa-face-smile" aria-hidden="true" style="font-size: 18px;"></i>
-									<span>썸네일 생성 시 인물의 얼굴 인식</span>
+									<span>썸네일 생성 시 인물의 얼굴을 중심점으로 자르기 </span>
 								</div>
-								<img src="images/face-crop-sample.svg" alt="얼굴 인식 기반 썸네일 크롭 예시" class="feature-image" />
+								<div class="face-crop-row">
+									<img src="images/uku_woman_org.png" alt="얼굴 인식 기반 썸네일 크롭 예시" class="face-crop-image" />
+									<i class="fa-solid fa-arrow-right face-crop-arrow" aria-hidden="true"></i>
+									<img src="images/uku_woman_face.png" alt="얼굴 인식 기반 썸네일 크롭 예시" class="face-crop-image" />
+								</div>
+								<div>
+									<ul>
+										<li>자동 얼굴 감지: 분류기를 통해 정면 얼굴을 정확하게 인식</li>
+										<li>스마트 크롭: 감지된 얼굴을 중심으로 최적의 영역을 자동으로 잘라냄</li>
+										<li>오탐지 방지: 최소 5번 이상 중복 검출된 영역만 유효한 얼굴로 인정</li>
+										<li>경계 처리: 이미지 경계를 벗어나지 않도록 자동 보정</li>
+									</ul>
+								</div>
 							</li>
 						</ul>
 						<p style="margin-top: 16px;">

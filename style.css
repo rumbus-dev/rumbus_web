@@ -17,6 +17,11 @@ body {
 	min-height: 100vh;
 	color: var(--text);
 	background-color: #080c1d;
+	overflow-x: hidden;
+}
+
+html {
+	overflow-x: hidden;
 }
 
 .hero {
@@ -241,6 +246,12 @@ nav a.active::after {
 	word-break: keep-all;
 }
 
+.content-section img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
 .content-section .info-card {
 	background: rgba(0, 0, 0, 0.03);
 	border: 1px solid rgba(0, 0, 0, 0.06);
@@ -277,6 +288,15 @@ nav a.active::after {
 	align-items: center;
 }
 
+.product-features li ul {
+	margin-top: 8px;
+	padding-left: 18px;
+}
+
+.product-features li p {
+	margin-bottom: 6px;
+}
+
 .product-features .feature-image {
 	width: min(420px, 100%);
 	height: auto;
@@ -285,9 +305,45 @@ nav a.active::after {
 	display: block;
 }
 
+.face-crop-row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	width: 100%;
+	flex-wrap: nowrap;
+}
+
+.face-crop-image {
+	flex: 1 1 0;
+	max-width: 200px;
+	width: 100%;
+	height: auto;
+	min-width: 0;
+	border-radius: 12px;
+}
+
+.face-crop-arrow {
+	font-size: 20px;
+	flex: 0 0 auto;
+}
+
 @media (max-width: 600px) {
 	.product-features .feature-image {
 		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.face-crop-row {
+		gap: 4px;
+	}
+
+	.face-crop-image {
+		max-width: 44%;
+	}
+
+	.face-crop-arrow {
+		font-size: 16px;
 	}
 }
 
@@ -308,10 +364,77 @@ nav a.active::after {
 	header {
 		flex-direction: column;
 		gap: 16px;
+		padding: 20px 6vw;
 	}
 
 	nav ul {
 		gap: 18px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 600px) {
+	.hero {
+		padding-top: 120px;
+	}
+
+	.hero,
+	.page-container,
+	.content-section {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.hero-content {
+		padding: 0 6vw 56px;
+	}
+
+	.hero-content h1 {
+		font-size: clamp(2rem, 8vw, 2.8rem);
+	}
+
+	.hero-content p {
+		font-size: 1rem;
+	}
+
+	.quick-info {
+		grid-template-columns: 1fr;
+		padding: 0 6vw 36px;
+	}
+
+	.btn {
+		width: 100%;
+	}
+
+	.hero-actions {
+		width: 100%;
+	}
+
+	.content-section {
+		padding: 72px 6vw;
+	}
+
+	.content-section h2 {
+		font-size: 2rem;
+	}
+
+	.content-section p {
+		font-size: 1rem;
+	}
+
+	.product-features {
+		gap: 20px;
+	}
+
+	.product-features li > div {
+		flex-wrap: wrap;
+	}
+
+	footer {
+		height: auto;
+		padding: 24px 6vw;
+		text-align: center;
 	}
 }
 

@@ -32,6 +32,52 @@
 		<link rel="icon" type="image/png" href="images/favicon.png" />
 		<link rel="apple-touch-icon" href="images/favicon.png" />
 
+		<!-- Structured Data (JSON-LD) for Google Sitelinks -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@graph": [
+				{
+					"@type": "WebSite",
+					"url": "https://www.rumbus.kr/",
+					"name": "주)럼버스",
+					"description": "데이터와 기술로 만드는 미래형 비즈니스 혁신",
+					"potentialAction": {
+						"@type": "SearchAction",
+						"target": "https://www.rumbus.kr/?s={search_term_string}",
+						"query-input": "required name=search_term_string"
+					}
+				},
+				{
+					"@type": "ItemList",
+					"itemListElement": [
+						{
+							"@type": "SiteNavigationElement",
+							"position": 1,
+							"name": "About",
+							"description": "럼버스 소개 및 비전",
+							"url": "https://www.rumbus.kr/#about"
+						},
+						{
+							"@type": "SiteNavigationElement",
+							"position": 2,
+							"name": "Products",
+							"description": "솔루션 및 PicServe 서비스",
+							"url": "https://www.rumbus.kr/#products"
+						},
+						{
+							"@type": "SiteNavigationElement",
+							"position": 3,
+							"name": "Contact",
+							"description": "문의하기",
+							"url": "https://www.rumbus.kr/#contact"
+						}
+					]
+				}
+			]
+		}
+		</script>
+
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="style.css" />
 	</head>

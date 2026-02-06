@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rumbus.kr/sitemap.xml

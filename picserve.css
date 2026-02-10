@@ -1,0 +1,20 @@
+/* PicServe page overrides */
+.hero {
+	background-image: none;
+	background-color: #ffffff;
+}
+
+.hero,
+.hero nav a,
+.hero .hero-content h1 {
+	color: #111111;
+}
+
+.hero .hero-content p {
+	color: #333333;
+}
+
+.hero .btn-secondary {
+	border-color: rgba(0, 0, 0, 0.3);
+	color: #111111;
+}

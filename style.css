@@ -224,6 +224,7 @@ nav a.active::after {
 
 #about,
 #products,
+#picserve,
 #contact {
 	background-image: none;
 }
@@ -356,7 +357,11 @@ nav a.active::after {
 #products .info-card,
 #products .info-card p,
 #products .info-card li,
-#products .info-card span {
+#products .info-card span,
+#picserve .info-card,
+#picserve .info-card p,
+#picserve .info-card li,
+#picserve .info-card span {
 	color: #000;
 }
 

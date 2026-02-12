@@ -83,6 +83,10 @@ header.scrolled {
 	background-color: transparent;
 }
 
+.logo-symbol--light {
+	filter: brightness(0) invert(1);
+}
+
 nav ul {
 	list-style: none;
 	display: flex;

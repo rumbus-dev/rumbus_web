@@ -36,6 +36,14 @@
 	line-height: 1.6;
 }
 
+.picserve-feature-image {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0;
+}
+
 @media (max-width: 1024px) {
 	.value-points-grid {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -108,6 +116,7 @@
 
 	img,
 	.feature-image,
+	.picserve-feature-image,
 	.face-crop-image {
 		max-width: 100% !important;
 		height: auto !important;

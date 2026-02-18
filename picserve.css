@@ -1,14 +1,7 @@
 /* PicServe page overrides */
 .hero {
-	position: relative;
-	min-height: 0vh;
 	background-image: none;
 	background-color: #ffffff;
-	background-size: cover;
-	background-position: center;
-	display: flex;
-	flex-direction: column;
-	padding-top: 90px;
 }
 .hero,
 .hero nav a,

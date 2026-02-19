@@ -87,10 +87,14 @@ header.scrolled {
 	filter: brightness(0) invert(1);
 }
 
-nav ul {
+nav > ul {
 	list-style: none;
 	display: flex;
 	gap: 28px;
+}
+
+nav > ul > li {
+	position: relative;
 }
 
 nav a {
@@ -119,6 +123,54 @@ nav a:focus-visible::after {
 
 nav a.active::after {
 	width: 100%;
+}
+
+.has-dropdown .dropdown-menu {
+	position: absolute;
+	top: calc(100% + 10px);
+	left: 50%;
+	transform: translateX(-50%) translateY(8px);
+	list-style: none;
+	min-width: 190px;
+	padding: 8px;
+	border-radius: 12px;
+	background: rgba(8, 12, 29, 0.95);
+	border: 1px solid rgba(255, 255, 255, 0.16);
+	box-shadow: 0 14px 30px rgba(0, 0, 0, 0.24);
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+	z-index: 20;
+}
+
+.has-dropdown .dropdown-menu a {
+	display: block;
+	padding: 10px 12px;
+	border-radius: 8px;
+	white-space: nowrap;
+	font-size: 0.95rem;
+	color: var(--text);
+}
+
+.has-dropdown .dropdown-menu a::after {
+	display: none;
+}
+
+.has-dropdown .dropdown-menu a:hover,
+.has-dropdown .dropdown-menu a:focus-visible {
+	background: rgba(255, 255, 255, 0.12);
+}
+
+.has-dropdown:hover .dropdown-menu,
+.has-dropdown:focus-within .dropdown-menu {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+	transform: translateX(-50%) translateY(0);
 }
 
 .hero-content {
@@ -376,7 +428,7 @@ nav a.active::after {
 		padding: 20px 6vw;
 	}
 
-	nav ul {
+	nav > ul {
 		gap: 18px;
 		flex-wrap: wrap;
 		justify-content: center;

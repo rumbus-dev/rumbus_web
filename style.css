@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400&display=swap");
+
 :root {
 	color-scheme: light;
 	--overlay: rgba(7, 12, 28, 0.6);
@@ -100,7 +102,8 @@ nav > ul > li {
 nav a {
 	text-decoration: none;
 	color: var(--text);
-	font-weight: 500;
+	font-family: "Noto Sans KR", "Pretendard", "Apple SD Gothic Neo", sans-serif;
+	font-weight: 400;
 	letter-spacing: 0.02em;
 	position: relative;
 }
@@ -291,6 +294,8 @@ nav a.active::after {
 
 .content-section h2 {
 	font-size: 2.5rem;
+	font-family: "Noto Sans KR", "Pretendard", "Apple SD Gothic Neo", sans-serif;
+	font-weight: 100;
 	margin-bottom: 2rem;
 	color: #111;
 }

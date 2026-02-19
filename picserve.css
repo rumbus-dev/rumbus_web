@@ -11,6 +11,7 @@
 .ps-page {
 	background: var(--ps-bg);
 	color: var(--ps-text);
+	font-family: "Noto Sans KR", "Noto Sans", "Pretendard", "Apple SD Gothic Neo", sans-serif;
 }
 
 .ps-page header {

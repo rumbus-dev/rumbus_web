@@ -1,4 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400&display=swap");
+@font-face {
+	font-family: "Noto Sans KR";
+	src: url("fonts/NotoSansKR-Variable.woff2") format("woff2"),
+		url("fonts/NotoSansKR-Variable.ttf") format("truetype");
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
 
 :root {
 	color-scheme: light;
@@ -30,7 +37,7 @@ html {
 	position: relative;
 	min-height: 100vh;
 	background-image: linear-gradient(var(--overlay), var(--overlay)),
-		url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80");
+		url("images/main-bg.png");
 	background-size: cover;
 	background-position: center;
 	display: flex;

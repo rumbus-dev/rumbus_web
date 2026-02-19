@@ -1,3 +1,12 @@
+@font-face {
+	font-family: "Noto Sans KR";
+	src: url("fonts/NotoSansKR-Variable.woff2") format("woff2"),
+		url("fonts/NotoSansKR-Variable.ttf") format("truetype");
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+
 :root {
 	--ps-bg: #f5f5f7;
 	--ps-surface: #ffffff;

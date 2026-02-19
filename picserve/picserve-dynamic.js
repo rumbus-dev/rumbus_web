@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	};
 
 	const updateHeroParallax = () => {
-		if (!heroMedia || !deviceFrame) {
+		if (!heroMedia) {
 			return;
 		}
 

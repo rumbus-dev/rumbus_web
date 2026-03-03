@@ -101,10 +101,10 @@
 				</div> -->
 			</section>
 
-			<!-- <section class="ps-story" id="story">
+			<section class="ps-story" id="story">
 				<div class="ps-story-sticky">
-					<h2>On-the-fly 아키텍처</h2>
-					<p id="ps-story-text">물리적 저장이 아닌, 요청 시점에 가치를 창출하는 On-the-fly 아키텍처를 제안합니다
+					<h2>실시간 객체 탐지 및 <br>컴퓨터 비전 모델 기반</h2>
+					<p id="ps-story-text">이미지 어노테이션부터 모델 학습, 추론, 결과 검토까지를 하나의 UI 흐름으로 연결한 데이터-학습 통합 워크플로우 솔루션입니다.
 					</p>
 					
 				</div>
@@ -113,69 +113,56 @@
 				</div>
 				<div class="value-points-wrap">
 					<ul class="value-points-grid">
-						<li><b>Single Source:</b> 서버에는 단 하나의 고품질 원본 이미지만 존재합니다.</li>
-						<li><b>Real-time Processing:</b> 요청 시점에 이미지를 실시간으로 리사이징, 크롭, 포맷 변환하여 전달합니다.</li>
-						<li><b>Benefit:</b> 중복 썸네일 생성 원천 차단 및 스토리지 거버넌스 최적화</li>
+						<li><b>데이터 준비 속도 향상:</b> 다중 이미지 업로드 및 디렉토리 기반 이미지 로딩 지원.</li>
+						<li><b>YOLOv8 중심 운영 일관성:</b> YOLOv8 탐지 결과(Bounding Box, 라벨, confidence) 시각화.</li>
+						<li><b>라벨링과 어노테이션:</b> 도형 기반(사각형/원형/폴리곤) 어노테이션으로 다양한 객체 형상 대응</li>
 					</ul>
 				</div>
-			</section> -->
+			</section>
 
 
-			<!-- <section class="ps-feature-grid" id="features">
+			<section class="ps-feature-grid" id="features">
 				<article class="ps-feature reveal">
 					<div class="ps-feature-copy">
 					
-						<h3>URL 파라미터 기반 실시간 리사이징/크롭</h3>
-						<p>빌드 없이 즉시 적용되는 파라미터 기반 이미지 최적화.</p>
+						<h3> 데이터 준비 속도 향상</h3>
+						<p>도형 기반(사각형/원형/폴리곤) 어노테이션으로 다양한 객체 형상 대응</p>
 					</div>
-					<img src="../images/picserve_step3.png" alt="URL 파라미터 기반 리사이징 기능" />
+					<!-- <img src="../images/picserve_step3.png" alt="URL 파라미터 기반 리사이징 기능" /> -->
 				</article>
 
 				<article class="ps-feature reveal">
 					<div class="ps-feature-copy">
 						
-						<h3>인물의 얼굴 중심 썸네일</h3>
-						<p>피사체를 유지한 채 썸네일을 자동으로 생성합니다.</p>
+						<h3>학습 운영 단순화</h3>
+						<p>학습 파라미터(epochs, batch_size, learning_rate) 기반 학습 실행</p>
 					</div>
 					<div class="face-crop-row">
-						<img src="../images/uku_woman_org.png" alt="얼굴 인식 기반 썸네일 크롭 예시" class="face-crop-image" />
+						<!-- <img src="../images/uku_woman_org.png" alt="얼굴 인식 기반 썸네일 크롭 예시" class="face-crop-image" />
 						<i class="fa-solid fa-arrow-right face-crop-arrow" aria-hidden="true"></i>
-						<img src="../images/uku_woman_face.png" alt="얼굴 인식 기반 썸네일 크롭 예시" class="face-crop-image" />
+						<img src="../images/uku_woman_face.png" alt="얼굴 인식 기반 썸네일 크롭 예시" class="face-crop-image" /> -->
 					</div>
 				</article>
 
 				<article class="ps-feature reveal">
 					<div class="ps-feature-copy">
 					
-						<h3>WebP 자동 변환으로 전송량 절감</h3>
-						<p>시각 품질을 유지하면서 네트워크 비용을 줄입니다.</p>
+						<h3>추론 결과 해석성 강화</h3>
+						<p>탐지 결과(Bounding Box, 라벨, confidence) 시각화와 선택한 탐지 박스의 좌표/크기/점수 상세 확인 가능</p>
 					</div>
-					<img src="../images/picserve_step4.png" alt="WebP 자동 최적화 기능" />
+					<!-- <img src="../images/picserve_step4.png" alt="WebP 자동 최적화 기능" /> -->
 				</article>
 
 				<article class="ps-feature reveal">
 					<div class="ps-feature-copy">
 					
-						<h3>워터마크 삽입으로 저작권 보호</h3>
-						<p>저작권 보호와 보관 정책 자동화를 동시에 제공합니다.</p>
+						<h3>YOLOv8 중심 운영 일관성</h3>
+						<p>학습 모델명 기준으로 학습/저장/재선택/삭제까지 단일 흐름 제공</p>
 					</div>
-					<img src="../images/picserve_step8.png" alt="워터마크 및 보관 자동화 기능" />
+					<!-- <img src="../images/picserve_step8.png" alt="워터마크 및 보관 자동화 기능" /> -->
 				</article>
-				<article class="ps-feature reveal">
-					<div class="ps-feature-copy">
-					
-						<h3>백업/삭제 예약과 디스크 사용 통계 제공</h3>
-						<p>분/시간/일/월/년 단위로 세밀한 예약 설정 가능</p>
-					</div>
-					<img src="../images/picserve_step5.png" alt="백업/삭제 예약과 디스크 사용 통계 제공" />
-				</article>
+				
 			</section>
-
-			<section class="ps-cta reveal">
-				<h2>Don’t Store. Serve.</h2>
-				<p>PicServe™로 이미지 인프라를 더 단순하고 더 빠르게 전환해보세요.</p>
-				<a class="btn btn-primary" href="/#contact">지금 상담하기</a>
-			</section> -->
 		</main>
 
 		<footer>
